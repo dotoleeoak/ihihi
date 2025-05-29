@@ -1,0 +1,11 @@
+#!/bin/sh
+
+URL="https://github.com/dotoleeoak/ihihi/blob/main/cute.jpeg?raw=true"
+
+if [ "$(uname)" = "Darwin" ]; then
+    open "$URL"
+elif [ "$(uname)" = "Linux" ]; then
+    xdg-open "$URL"
+else
+    echo "Unsupported OS"
+fi
